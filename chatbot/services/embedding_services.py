@@ -22,7 +22,7 @@ class DocumentProcessor:
     4. Save FAISS index
     """
 
-    def __init__(self, index_dir: str = "faiss_index2"):
+    def __init__(self, index_dir: str = "faiss_index"):
         """
         Initialize the processor with paths.
 
