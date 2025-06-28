@@ -31,8 +31,8 @@ Before getting started, ensure you have the following installed:
 
 1. **Clone the repository** (if applicable):
    ```bash
-   git clone <repo>
-   cd <repo>
+   git clone git@github.com:Ssangam1999/chatbot.git
+   cd chatbot
    ```
 
 2. **Set up virtual environment and install dependencies**:
