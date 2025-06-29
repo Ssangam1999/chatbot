@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from langgraph.graph import StateGraph
 
-from chatbot.schema.process_fastapi_request import ABC
+from chatbot.schema.process_fastapi_request import QueryInput
 from chatbot.schema.process_langraph_request import ChatState
 from chatbot.services.chat_services import ChatEngine
 
@@ -21,7 +21,7 @@ def generate(state):
 
 
 @router.post("/users", tags=["chatbot"])
-async def read_users(query: ABC):
+async def read_users(query: QueryInput):
     graph = StateGraph(ChatState)
     graph.add_node("retrieve", retrieve)
     graph.add_node("generate", generate)
