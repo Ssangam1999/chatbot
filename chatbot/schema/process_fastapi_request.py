@@ -1,4 +1,4 @@
 from pydantic import BaseModel
 
-class ABC(BaseModel):
+class QueryInput(BaseModel):
     query: str
